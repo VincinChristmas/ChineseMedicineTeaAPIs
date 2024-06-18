@@ -1,7 +1,9 @@
 const express = require('express')
 const app = express()
+const cors require('cors')
 const PORT = 8000
 
+app.use(cors())
 
 const teas = {
     'emerald banana tea': {
@@ -9,7 +11,7 @@ const teas = {
     'ingredients': ["banana: 200grams", "watermelon peel: 100grams"],
     'seasoning': "an appropiate amount of crystal sugar"
 }
-}
+ }
  
 
 
